@@ -1,4 +1,4 @@
-## exif    
+# 1. 何为exif    
 
 Exchangeable image file format([Exif](https://en.wikipedia.org/wiki/Exif))是存储在图片文件中的一些辅助信息，一些常见属性和值举例
 
@@ -24,12 +24,12 @@ Components configuration	|Y Cb Cr –
 Compressed bits per pixel	|4.01
 Exposure bias	|0.0
 
-## 影响    
+# 2. cv开发中exif的影响
 有些软件旋转图片时，并未实际旋转，而是设置了exif中的 Orientation 选项。而浏览器、不同图片查看器、图片处理库(Opencv、skimage、PIL)等对exif的支持各不相同。有时会遇到坑。
 
-## 已知坑    
+# 3. 已知坑    
 
-### opencv    
+## 3.1 opencv    
 截至到 2017.4.8
 
 opencv 2.* 是直接忽略exif的
@@ -39,12 +39,12 @@ opencv 3.* 开始支持exif，其中:
 * imread默认处理exif
 * imdecode不处理exif
 
-## 读写exif的库     
+# 4. 读写exif的库     
 
-### python    
+## 4.1 python    
 [exifread](https://pypi.python.org/pypi/ExifRead)
 
-### c++
+## 4.2 c++
 * [TinyEXIF](https://github.com/cdcseacave/TinyEXIF)
 * [easyexif](https://github.com/mayanklahiri/easyexif)
 
