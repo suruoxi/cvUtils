@@ -1,15 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# ************************************************************************ 
-# * 
-# * @file: evaluate_logo.py 
-# * @author: futian.zp 
-# * @date: 2018-01-18 17:40 
-# * @version 1.0  
-# * @description: Python Script 
-# * @Copyright (c)  all right reserved 
-# * 
-#************************************************************************* 
 
 def cal_iou(val1, val2):
     """
